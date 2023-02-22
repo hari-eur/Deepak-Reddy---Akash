@@ -1,0 +1,1 @@
+//write a program to find whether entered number is palindrome or not(Use finding the reverse of a number logic)

@@ -1,0 +1,1 @@
+//write a program to reverse a number and check if the reversed number is prime number or not
