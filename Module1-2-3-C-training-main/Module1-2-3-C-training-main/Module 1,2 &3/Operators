@@ -1,0 +1,53 @@
+#Write simple C programs for each operators with your comments of understanding of the differences.
+
+#Try to find the output of below programs with your comments of understanding.
+
+(i)Binary
+
+int a =5;
+int b= 7;
+
+a&&b = ?
+a&b = ?
+
+//provide your comments of understanding the difference between two.
+
+(ii)Write a program to find the complement of a number.
+
+(iii)Provide comments of understanding between the two.
+
+int a = 10;
+a++;
+++a;
+const int x = 8;
+x =9;
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5;
+    int b = 7;
+    printf("a&&b = %x \n",a&&b);
+    /* it is an logical and operator, it operates on boolean values like if both are true value then only the output is true else 
+    in all case the output is false. Given two integer are true positive values it consider both of them as 1*/
+    printf("a&b = %x \n",a&b);
+    /*it is an birwise and operator, it initially converts the values into hexadecimal(boolean) and performs bit by bit and
+    operations.ex:-5-0000 0101 and 7 = 0000 0111*/
+    printf("~a = %x\n",~a);
+    /*it is an complement operator, it convert each bit into its complement*/
+    int c = 10;
+    printf("the preincrement value is ++c = %d\n",++c);/*it first increment and later update the variable*/;
+    int d = c++;
+    printf("the postincrement value is c++ = %d and the output is d = %d\n",c++,d);/*it first the update the variable and later
+    increments the value*/
+    return 0;
+}
+
+/*output
+a&&b = 1 
+a&b = 5 
+~a = fffffffa
+the preincrement value is ++c = 11
+the postincrement value is c++ = 12 and the output is d = 11
+*/

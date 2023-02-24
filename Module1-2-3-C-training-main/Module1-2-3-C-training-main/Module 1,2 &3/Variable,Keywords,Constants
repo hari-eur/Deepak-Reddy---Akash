@@ -1,0 +1,35 @@
+#Write simple C programs for each - Variable,keywords,Constants along with your comments of understanding of the differences.
+
+#Try to find the output of below program with your comments:
+
+const int x = 8;
+x =9;
+
+/*code*/
+#include<stdio.h>
+int main()
+{
+    int a = 10;                             //int is a 2 or 4 bytes datatype
+    printf("the integer value is %d\n",a);
+    float b = 12.50;                        //float is an 4 bytes datatype
+    printf("the float value is %f\n",b);
+    char ch = 'a';                          //char is of 1 byte
+    printf("the charcater value is %c\n",ch);
+    double d = 98;                          //double is of 8 bytes
+    printf("the double value is %lf\n",d);
+    int t = a+10;                           /*here t is a variable which is goin to hold the value of operation "a+10"*/
+    printf("the value of t = %d\n",t);
+    const int x = 8;
+   // x = 9;
+    /*printf("the value of x = %d\n",x); will raise an error because the keyword const makes variable as an read only variable*/
+    /*the datatypes are keywords,the alphabets used to store the values are variables and the numerical literals are constants*/
+    return 0;
+}
+
+/*output
+the integer value is 10
+the float value is 12.500000
+the character value is a
+the double value is 98.000000
+the value of t = 20
+*/
