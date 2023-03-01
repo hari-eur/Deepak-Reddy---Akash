@@ -15,6 +15,20 @@ int main()
     PRINT(0, 3);
     return 0;
 }
+/*code output*/
+/*This code will results in error because any space or new line in macrobody will not be considered.
+the error is as follows
+/tmp/qsxGdiwk8H.c:3:25: error: expected identifier or '(' before '{' token
+    3 |                         {
+      |                         ^
+/tmp/qsxGdiwk8H.c:9:26: error: expected identifier or '(' before 'while'
+    9 |                         }while(1)
+      |   ^~~~~
+2 | #define PRINT(i, limit) do { if (i++ < limit) { printf("GeeksQuizn"); continue; } }while(1)
+      |                                   ^~
+Explaination: It also states lvalue required as increment operator,i.e In main block, we need to mention two variable repesenting macro variables. Since they are not mentioned it is given an error.
+*/
+
 
 2.#include <stdio.h>
 #define macro(n, a, i, m) m##a##i##n
@@ -25,6 +39,8 @@ int MAIN()
     printf("GeeksQuiz");
     return 0;
 }
+/*It outputs the string "GeeksQuiz".
+Here the m##a##i##n is used in the place of macro(n,a,i,m) which itself can be used in the place of Main.*/
 
 3.
 Which one of the following is invalid macro in C programming?
@@ -32,7 +48,7 @@ Which one of the following is invalid macro in C programming?
 (B) #error
 (C) #ifndef
 (D) #elseif
-
+/*elseif is an invalid macro in c programming. the correct macro is #elif*/
 
 4.#include<stdio.h>
 # define loop while(true)
@@ -42,6 +58,7 @@ int main()
 	printf("preprocessor-aptitude");
 	return 0;
 }
+/*this raises an error because here true is undeclared in macrobody*/, to represent a infinite loop we need to replace true with value 1. Then loop statement runs infinte loop there.*/
 
 
 5.#include<stdio.h>
@@ -61,6 +78,7 @@ int main()
 	printf("%d",num);
 	return 0;
 }
+/* here macroname a is replaced with macrobody "=" operator in main block. Then num variable is assigned with value 6. The ouput is "6"*/
 
 7.#include<stdio.h>
 int main()
@@ -69,6 +87,7 @@ int main()
 	printf("%s\n", __DATE__ );
 	return 0;
 }
+/*It outputs the current date in form of "Mmm dd yyyy". __DATE__ is a character string literal containing the date when source file was compiled.The value of __DATE__ changes as the compiler processes any include files that are part of the source program. */
 
 8.#include<stdio.h>
 # define puts  "%s C preprocessor"
@@ -77,6 +96,7 @@ int main()
 	printf(puts, puts);
 	return 0;
 }
+/* The output is - %s C preprocessor C preprocessor. It puts "%s C preprocessor" in place of puts in main block. Then in printf statement %s is replaced with ""%s C preprocessor".*/
 
 9. __________ is the Preprocessor directive which is used to end the scope of #ifdef.
 a) #elif
