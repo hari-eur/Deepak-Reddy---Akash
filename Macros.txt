@@ -1,0 +1,92 @@
+//Find out put below programs with your comments of understanding of answer.
+
+1.#include <stdio.h>
+#define PRINT(i, limit) do 
+                        { 
+                            if (i++ < limit) 
+                            { 
+                                printf("GeeksQuizn"); 
+                                continue; 
+                            } 
+                        }while(1)
+ 
+int main()
+{
+    PRINT(0, 3);
+    return 0;
+}
+
+2.#include <stdio.h>
+#define macro(n, a, i, m) m##a##i##n
+#define MAIN macro(n, a, i, m)
+ 
+int MAIN()
+{
+    printf("GeeksQuiz");
+    return 0;
+}
+
+3.
+Which one of the following is invalid macro in C programming?
+(A) #pragma
+(B) #error
+(C) #ifndef
+(D) #elseif
+
+
+4.#include<stdio.h>
+# define loop while(true)
+int main()
+{
+	loop;  
+	printf("preprocessor-aptitude");
+	return 0;
+}
+
+
+5.#include<stdio.h>
+# define x - -5
+int main()
+{
+	printf("%d",x);
+	return 0;
+}
+
+
+6.#include<stdio.h>
+#define a =
+int main()
+{
+	int num a 6;
+	printf("%d",num);
+	return 0;
+}
+
+7.#include<stdio.h>
+int main()
+{
+	char DATE[15] = "Current Date";
+	printf("%s\n", __DATE__ );
+	return 0;
+}
+
+8.#include<stdio.h>
+# define puts  "%s C preprocessor"
+int main()
+{
+	printf(puts, puts);
+	return 0;
+}
+
+9. __________ is the Preprocessor directive which is used to end the scope of #ifdef.
+a) #elif
+b) #ifndef
+c) #endif
+d) #if
+
+
+10.What is a Pragma in C language?
+a) A Pragma may be an instruction to build tool to process or generate comments
+b) A Pragma may be an instruction to compiler to execute specific functions at specific times say startup or exit of program.
+c) A pragma may be an instruction to tell compiler to ignore certain warnings.
+d) All the above
