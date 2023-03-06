@@ -1,0 +1,19 @@
+1.WAP to print the second smallest number in an array.
+
+2.WAP to reverse print the elements in array.
+
+3.WAP to reverse print an elements in an array in the same array(without using temporary array).
+
+4.WAP to pass a character array to a function and return true if the character array is palindrome or return false if its not palindrome.
+
+5.WAP to pass a character array to a function to swap lower case to upper case and upper case to lower case of the elements in character array.
+
+6.WAP to check whether the passed character array to a function is anagram or not.
+
+7.WAP to implement bubble sort.
+
+8.WAP to implement quick sort.
+
+9.WAP to print the number of prime numbers in a integer array.
+
+10.WAP to print the factorial of the elements in a integer array.
