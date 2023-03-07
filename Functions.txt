@@ -1,0 +1,13 @@
+1.Write a sample program to implement call back function with your comments of understanding.
+
+
+2.Write a sample program for call by value and call by address and state the differences with your comments of understanding.
+
+
+3.Write a function which gets an array and returns address of second largest number in an array.
+
+
+4.Write a program to state difference between normal function and inline function.
+
+
+5.Try to implement your own printf function.
